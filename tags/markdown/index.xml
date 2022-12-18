@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>markdown on eyre - A super concise theme for Hugo</title>
-    <link>http://localhost:1313/tags/markdown/</link>
-    <description>Recent content in markdown on eyre - A super concise theme for Hugo</description>
+    <title>markdown on bfstudy - open my view</title>
+    <link>https://bfstudy.github.io/tags/markdown/</link>
+    <description>Recent content in markdown on bfstudy - open my view</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>bfstudy</copyright>
-    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bfstudy.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown使用指南</title>
-      <link>http://localhost:1313/post/2022121801/</link>
+      <link>https://bfstudy.github.io/post/2022121801/</link>
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/2022121801/</guid>
+      <guid>https://bfstudy.github.io/post/2022121801/</guid>
       <description>这是第一篇博文。 随便输入一些内容，权当测试了。 package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello Hugo Blog!&amp;#34;) }</description>
     </item>
     
