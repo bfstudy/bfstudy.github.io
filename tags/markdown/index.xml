@@ -14,7 +14,7 @@
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://bfstudy.github.io/post/2022121801/</guid>
-      <description>这是第一篇博文。 随便输入一些内容，权当测试了。 package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello Hugo Blog!&amp;#34;) }</description>
+      <description>这是第一篇博文。 随便输入一些内容，权当测试了。 package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello Hugo Blog!&amp;#34;) } python bash print(&amp;#34;Hello World!&amp;#34;) echo &amp;#34;Hello World!&amp;#34; json XML properties { &amp;#34;Hello&amp;#34;: &amp;#34;World&amp;#34; } &amp;lt;Hello&amp;gt;World&amp;lt;/Hello&amp;gt; Hello = World</description>
     </item>
     
   </channel>
