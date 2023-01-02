@@ -14,7 +14,7 @@
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://bfstudy.github.io/post/2022121801/</guid>
-      <description>这是第一篇博文。 随便输入一些内容，权当测试了。 这个是用来展示代码高亮的： package main import &amp;#34;fmt&amp;#34; func main() { fmt.Println(&amp;#34;Hello Hugo Blog!&amp;#34;) } 这个是用来展示tabs的： python bash print(&amp;#34;Hello World!&amp;#34;) echo &amp;#34;Hello World!&amp;#34; json XML properties</description>
+      <description>这是第一篇博文。 随便输入一些内容，权当测试了。 目前文章的url明明方式是yyyymmddxx，其中yyyy表示年，mm表示月份，dd表示日期</description>
     </item>
     
   </channel>
