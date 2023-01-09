@@ -14,7 +14,9 @@
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://bfstudy.github.io/post/2022121801/</guid>
-      <description>这是第一篇博文。 随便输入一些内容，权当测试了。 目前文章的url明明方式是yyyymmddxx，其中yyyy表示年，mm表示月份，dd表示日期</description>
+      <description>&lt;p&gt;这是第一篇博文。&lt;/p&gt;
+&lt;p&gt;随便输入一些内容，权当markdown语法测试了。&lt;/p&gt;
+&lt;p&gt;目前文章的url命名方式是yyyymmddxx，其中yyyy表示年，mm表示月份，dd表示日期，xx表示今天的第几篇。&lt;/p&gt;</description>
     </item>
     
   </channel>
