@@ -7,21 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>bfstudy</copyright>
-    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://bfstudy.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>搭建算法刷题环境(C&#43;&#43;版)</title>
-      <link>https://bfstudy.github.io/post/2023010501/</link>
-      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://bfstudy.github.io/post/2023010501/</guid>
-      
-        <description>环境前置要求 需要先安装好 Docker，Docker 的好处不言而喻，方便跨平台，也避免污染宿主机环境，起到隔离的作用。 用什么操作系统都无所谓，</description>
-      
-    </item>
     
     <item>
       <title>关于2023年学什么的一些想法</title>
@@ -87,7 +76,7 @@
       
       <guid>https://bfstudy.github.io/moment/</guid>
       
-        <description>2023年 2023-01-08 14:25 以前上学的时候都是别人推荐什么专业书，自己去看相关书，有的书实际上并不适合自己当时的程度去看，结果花了时间却看的仍是一头雾水，</description>
+        <description>2023年 2023-03-03 18:41 之前电脑重装了系统，导致很久博客都没更新，今天在本机上恢复搭建了博客环境，从今天开始，不定期更新博客。 号外：技术文章估计量较大</description>
       
     </item>
     

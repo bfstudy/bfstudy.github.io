@@ -7,16 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>bfstudy</copyright>
-    <lastBuildDate>Thu, 05 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bfstudy.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>搭建算法刷题环境(C&#43;&#43;版)</title>
-      <link>https://bfstudy.github.io/post/2023010501/</link>
-      <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://bfstudy.github.io/post/2023010501/</guid>
-      <description>环境前置要求 需要先安装好 Docker，Docker 的好处不言而喻，方便跨平台，也避免污染宿主机环境，起到隔离的作用。 用什么操作系统都无所谓，</description>
-    </item>
-    
+    <lastBuildDate>Mon, 02 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bfstudy.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于2023年学什么的一些想法</title>
       <link>https://bfstudy.github.io/post/2023010216/</link>
