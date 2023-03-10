@@ -24,7 +24,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="JFS" />
-  <meta name="description" content="2023年 苏轼词选 1月05日-3月10日 浪潮之巅 3月08日-3月21日" />
+  <meta name="description" content="我的书库" />
 
   <meta name="keywords" content="Hugo, theme, eyre, bfstudy" />
 
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.483cdf069f527be81d88f90397e4c7e97f6940696b8d0930203f553e07e78ded.css" integrity="sha256-SDzfBp9Se&#43;gdiPkDl&#43;TH6X9pQGlrjQkwID9VPgfnje0=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.083bcc09b2d5ce90f8f97029891d6d7ee2de73875473bc6525e3e906b5987e2c.css" integrity="sha256-CDvMCbLVzpD4&#43;XApiR1tfuLec4dUc7xlJePpBrWYfiw=" media="screen" crossorigin="anonymous">
 
 
 
@@ -63,18 +63,18 @@
 
 
 <meta property="og:title" content="" />
-<meta property="og:description" content="2023年 苏轼词选 1月05日-3月10日 浪潮之巅 3月08日-3月21日" />
+<meta property="og:description" content="我的书库" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bfstudy.github.io/reading/" /><meta property="article:section" content="" />
 
 
 <meta itemprop="name" content="">
-<meta itemprop="description" content="2023年 苏轼词选 1月05日-3月10日 浪潮之巅 3月08日-3月21日">
+<meta itemprop="description" content="我的书库">
 
-<meta itemprop="wordCount" content="35">
+<meta itemprop="wordCount" content="4">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="2023年 苏轼词选 1月05日-3月10日 浪潮之巅 3月08日-3月21日"/>
+<meta name="twitter:description" content="我的书库"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -270,6 +270,13 @@
   <div class="post-content post-font-simple">
     
 <style>
+    .page-title {
+        text-align: center;
+        font-family: 'FSYaHei';
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+
     .fs-year {
         font-family: "FSYaHei";
         font-weight: bold;
@@ -295,7 +302,8 @@
     }
 
     .book-item:hover {
-        border: 1px solid black;
+        border: 1px solid wheat;
+        border-radius: 5px;
         background-color: rgb(240, 195, 135);
         cursor: pointer;
     }
@@ -319,24 +327,72 @@
     }
 </style>
 
-<p class="fs-year"> 2023年 </p>
+<div class="page-title">我的书库</div>
 
-<div class="book-shelf">
-    <a class="book-item" href="https://book.douban.com/subject/33474750/">
-        <div class="book-img">
-            <img src="images/sushicixuan.jpg" />
-            <div class="book-name">苏轼词选</div>
-            <div class="book-time">1月05日-3月10日</div>
-        </div>
-    </a>
-    <a class="book-item" href="https://book.douban.com/subject/26740242/">
-        <div class="book-img">
-            <img src="images/langchaozhidian.jpg" />
-            <div class="book-name">浪潮之巅</div>
-            <div class="book-time">3月08日-3月21日</div>
-        </div>
-    </a>
+<div id="app">
 </div>
+
+<script type="text/javascript">
+    const DouBanBaseUrl = "https://book.douban.com/subject/";
+    const ImgBaseUrl = "images/";
+    class BookItem {
+        constructor(name, date, doubanId, imgName) {
+            this.bookName = name;
+            this.bookDate = date;
+            this.bookUrl = DouBanBaseUrl + doubanId + "/";
+            this.bookImgUrl = ImgBaseUrl + imgName;
+        }
+    }
+
+    class AnnualReading {
+        constructor(year, itemList) {
+            this.bookYear = year;
+            this.bookItemList = itemList;
+        }
+    }
+
+    function createBookItemElement(bookItem) {
+        let bookItemElement = document.createElement('a');
+        bookItemElement.href = bookItem.bookUrl;
+        bookItemElement.className = "book-item";
+        let divNode = document.createElement('div');
+        divNode.className = "book-img";
+        let imgNode = document.createElement('img');
+        imgNode.src = bookItem.bookImgUrl;
+        let nameNode = document.createElement('div');
+        nameNode.className = "book-name";
+        nameNode.textContent = bookItem.bookName;
+        let dateNode = document.createElement('div');
+        dateNode.className = "book-time";
+        dateNode.textContent = bookItem.bookDate;
+        divNode.append(imgNode, nameNode, dateNode);
+        bookItemElement.appendChild(divNode);
+        return bookItemElement;
+    }
+    let app = document.getElementById('app');
+    let annualReadings = [
+        new AnnualReading("2023", [
+            new BookItem("苏轼词选", "1月05日-3月10日", "26740242", "sushicixuan.jpg"),
+            new BookItem("浪潮之巅", "3月08日-3月21日", "33474750", "langchaozhidian.jpg"),
+            new BookItem("人间草木", "3月09日-3月19日", "27049320", "renjiancaomu.jpg"),
+        ]),
+    ];
+    for (let i = 0; i < annualReadings.length; i++) {
+        let item = annualReadings[i];
+        let pNode = document.createElement('p');
+        pNode.className = "fs-year";
+        pNode.textContent = item.bookYear;
+        app.appendChild(pNode);
+        let bookShelfNode = document.createElement('div');
+        bookShelfNode.className = "book-shelf";
+        for (let j = 0; j < item.bookItemList.length; j++) {
+            let bookItem = item.bookItemList[j];
+            let bookItemNode = createBookItemElement(bookItem);
+            bookShelfNode.appendChild(bookItemNode);
+        }
+        app.appendChild(bookShelfNode);
+    }
+</script>
   </div>
 </article>
 
