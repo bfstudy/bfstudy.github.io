@@ -1,0 +1,375 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  max-width: 830px;
+  margin: 0 auto;
+  color: #000;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+.logo {
+  flex: 0.9;
+}
+.logo,
+.btn {
+  background-color: transparent;
+  min-width: 80px;
+  min-height: 40px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border: none;
+  padding: 5px;
+}
+.logo span,
+.btn span {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  padding: 15px 36px;
+  transition: 0.3s;
+  background-color: #363837;
+  color: #eee;
+  box-sizing: border-box;
+}
+.logo .btn::before,
+.btn .btn::before,
+.logo .btn::after,
+.btn .btn::after {
+  background: transparent;
+  z-index: 2;
+  position: absolute;
+  content: "";
+}
+.logo .btn-hover::after,
+.btn .btn-hover::after,
+.logo .btn-hover::before,
+.btn .btn-hover::before {
+  width: 10%;
+  height: 25%;
+  transition: 0.35s;
+}
+.logo .btn-hover::before,
+.btn .btn-hover::before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #1c1f1e;
+  border-bottom: 1px solid #1c1f1e;
+}
+.logo .btn-hover::after,
+.btn .btn-hover::after {
+  top: 0;
+  right: 0;
+  border-top: 1px solid #1c1f1e;
+  border-right: 1px solid #1c1f1e;
+}
+.logo .btn-hover:hover::before,
+.btn .btn-hover:hover::before,
+.logo .btn-hover:hover::after,
+.btn .btn-hover:hover::after {
+  width: 99%;
+  height: 99%;
+}
+.nav-item {
+  font-size: 18px;
+  font-family: "FSHeiti";
+  margin-right: 20px;
+}
+.nav-item a::after {
+  content: " ";
+  height: 2px;
+  width: 0;
+  margin: auto;
+  transition: all 0.3s;
+  display: block;
+  background: green;
+}
+.nav-item a:hover::after {
+  width: 100%;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.homepage {
+  width: 800px;
+  margin: 90px auto;
+}
+.author {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+.author-left {
+  width: 200px;
+  height: 200px;
+}
+.author-avatar {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  transform: rotateY(180deg);
+}
+.author-right {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  height: 100px;
+}
+.author-right::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+  border-right-color: black;
+  position: absolute;
+  margin-left: -528px;
+  margin-top: 36px;
+}
+.author-right::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+  border-right-color: #f0c387;
+  position: absolute;
+  margin-left: -524px;
+  margin-top: 36px;
+}
+.author-words {
+  font-size: 24px;
+  font-family: "FSKai";
+}
+.latest-articles {
+  margin-top: 30px;
+}
+.latest-articles h3 {
+  margin-left: 50px;
+}
+.latest-articles .articles .latest-article-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.latest-articles .articles .latest-article-info .latest-article-title {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  color: black;
+  font-family: "FSKai";
+  font-size: 19px;
+}
+.latest-articles .articles .latest-article-info .latest-article-title::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  margin: auto;
+  display: block;
+  background: green;
+  transition: all 0.3s;
+}
+.latest-articles .articles .latest-article-info .latest-article-title:hover::after {
+  width: 100%;
+}
+.latest-articles .articles .latest-article-info .latest-article-date {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  font-family: "FSWeibei";
+}
+.latest-articles .articles .latest-article-info:last-child {
+  margin-bottom: auto;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 840px;
+  background-color: #fbdca4;
+  border-radius: 12px;
+}
+.post-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post-header .article-title {
+  font-family: "FSHeiti";
+  font-size: 30px;
+  margin: 20px 0;
+}
+.post-content {
+  margin: 20px;
+  font-size: 19px;
+  font-family: "FSFangsong";
+}
+.post-footer {
+  margin: 0 20px 20px 20px;
+}
+.post-footer .footer-item {
+  margin-bottom: 10px;
+}
+.post-footer .footer-item:last-child {
+  margin-bottom: 0;
+}
+.post-footer::before {
+  display: block;
+  content: "";
+  width: inherit;
+  margin-bottom: 20px;
+  border-top: 1px dashed black;
+}
+.article-info {
+  border-bottom: 1px dotted black;
+  font-family: "FSWeibei";
+}
+.wrapper {
+  margin-right: 100px;
+}
+.timeline-title {
+  text-align: center;
+  font-family: "FSHeiti";
+}
+.line-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.timeline {
+  display: flex;
+  flex-direction: row;
+}
+.line-date {
+  font-weight: bold;
+  min-width: 70px;
+  flex-basis: 70px;
+  text-align: center;
+  color: green;
+}
+.dot {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.dot-sm {
+  border-radius: 50%;
+  background-color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.line-dot {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  flex-basis: 18px;
+  margin-top: 1px;
+  margin-right: 70px;
+}
+.line-dot-sm {
+  width: 13px;
+  height: 13px;
+}
+.line-h {
+  width: 4px;
+  border-left: 4px solid black;
+  margin: -5px 0 0 6px;
+}
+.line-h-current {
+  height: 80px;
+}
+.line-h-sm {
+  height: 50px;
+}
+.current-year {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.current-dot {
+  width: 32px;
+  height: 32px;
+  flex-basis: 32px;
+  min-width: 32px;
+  margin-left: 80px;
+}
+.current-dot-sm {
+  width: 24px;
+  height: 24px;
+}
+.line-title {
+  margin-left: 130px;
+  width: auto;
+  height: 60px;
+  position: absolute;
+}
+.line-title a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: "FSKai";
+}
+.line-title a::after {
+  content: " ";
+  height: 2px;
+  width: 0;
+  margin: auto;
+  transition: all 0.3s;
+  display: block;
+  background: green;
+}
+.line-title a:hover::after {
+  width: 100%;
+}
+.line-title:last-child {
+  height: auto;
+}
+.line-item-title {
+  margin-top: -4px;
+}
+#back-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: none;
+}
+#back-top:hover {
+  font-family: "FSHeiti";
+  cursor: pointer;
+  text-decoration: underline;
+}
+@font-face {
+  font-family: "FSKai";
+  src: url('/font/kaiti.ttf');
+}
+@font-face {
+  font-family: "FSHeiti";
+  src: url('/font/heiti.ttf');
+}
+@font-face {
+  font-family: "FSFangsong";
+  src: url('/font/fangsong.ttf');
+}
+@font-face {
+  font-family: "FSWeibei";
+  src: url('/font/weibei.ttf');
+}
+body {
+  background-color: #f0c387;
+}

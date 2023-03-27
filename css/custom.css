@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "FSKai";
+  src: url('/font/kaiti.ttf');
+}
+@font-face {
+  font-family: "FSHeiti";
+  src: url('/font/heiti.ttf');
+}
+@font-face {
+  font-family: "FSFangsong";
+  src: url('/font/fangsong.ttf');
+}
+@font-face {
+  font-family: "FSWeibei";
+  src: url('/font/weibei.ttf');
+}
