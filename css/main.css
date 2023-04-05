@@ -215,6 +215,7 @@ article {
 .post-content {
   margin: 20px;
   font-size: 19px;
+  line-height: 25px;
   font-family: "FSFangsong";
 }
 .post-footer {
