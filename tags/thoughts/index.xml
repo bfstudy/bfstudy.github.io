@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts on FSReading</title>
+    <link>https://bfstudy.github.io/tags/thoughts/</link>
+    <description>Recent content in Thoughts on FSReading</description>
+    <generator>Hugo</generator>
+    <language>english</language>
+    <lastBuildDate>Sat, 24 Aug 2024 10:37:12 +0800</lastBuildDate>
+    <atom:link href="https://bfstudy.github.io/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yes! My Own English Blog Site</title>
+      <link>https://bfstudy.github.io/posts/yes-my-own-english-blog-site/</link>
+      <pubDate>Sat, 24 Aug 2024 10:37:12 +0800</pubDate>
+      <guid>https://bfstudy.github.io/posts/yes-my-own-english-blog-site/</guid>
+      <description>what I thought about my own blog site</description>
+    </item>
+  </channel>
+</rss>
